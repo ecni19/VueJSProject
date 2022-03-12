@@ -27,6 +27,7 @@ export default {
       this.isClick = !this.isClick;
     }
   },
+  // fetch from api before component render
   async created() {
     const res = await fetch(
       "https://aggiefeed.ucdavis.edu/api/v1/activity/public?l=25"
